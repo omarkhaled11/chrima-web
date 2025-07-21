@@ -8,120 +8,185 @@ import AppStoreButtons from "../components/AppStoreButtons.astro";
   description="Take control of your finances with Chrima. Track subscriptions, manage expenses, and get smart reminders all in one beautiful app."
 >
   <!-- Hero Section -->
-  <section class="py-12 md:py-20">
-    <div class="text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-        Smart Subscription Management Made Simple
-      </h1>
-      <p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
-        Never miss a payment again. Track all your subscriptions, manage expenses, and save money with smart insights.
-      </p>
-      <AppStoreButtons />
-      <div class="mt-12 relative">
-        <img
-          src="/images/home-page.png"
-          alt="Chrima App Interface"
-          class="rounded-xl shadow-2xl mx-auto max-w-full"
-          width="800"
-          height="600"
-        />
+  <section class="w-full py-16 md:py-24">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-left">
+          <h1 class="text-4xl md:text-5xl font-bold mb-8">
+            Smart Subscription Management Made Simple
+          </h1>
+          <p class="text-xl md:text-2xl mb-10">
+            Never miss a payment again. Track all your subscriptions, manage
+            expenses, and save money with smart insights.
+          </p>
+          <div class="mb-10 md:mb-0">
+            <AppStoreButtons />
+          </div>
+        </div>
+        <div class="relative flex justify-center items-center">
+          <img
+            src="/images/home-page.png"
+            alt="Chrima App Interface"
+            class="rounded-xl w-[240px] md:w-[320px] lg:w-[400px] h-auto"
+            width="600"
+            height="450"
+          />
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section class="py-16 bg-gray-50 -mx-4 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-12">Everything You Need to Stay on Top of Your Expenses</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center p-6">
-          <div class="text-purple-600 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+  <section class="w-full py-20 bg-[#2A2A2A]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-16">
+        Everything You Need to Stay on Top of Your Expenses
+      </h2>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="text-center p-8">
+          <div class="text-[#84CC16] mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-12 w-12 mx-auto"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Smart Reminders</h3>
-          <p class="text-gray-700">Never miss a payment with customizable alerts and notifications</p>
+          <h3 class="text-xl font-semibold mb-4">Smart Reminders</h3>
+          <p>Never miss a payment with customizable alerts and notifications</p>
         </div>
-        <div class="text-center p-6">
-          <div class="text-purple-600 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        <div class="text-center p-8">
+          <div class="text-[#84CC16] mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-12 w-12 mx-auto"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Expense Analytics</h3>
-          <p class="text-gray-700">Get detailed insights into your spending patterns and trends</p>
+          <h3 class="text-xl font-semibold mb-4">Expense Analytics</h3>
+          <p>Get detailed insights into your spending patterns and trends</p>
         </div>
-        <div class="text-center p-6">
-          <div class="text-purple-600 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <div class="text-center p-8">
+          <div class="text-[#84CC16] mb-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-12 w-12 mx-auto"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Budget Tracking</h3>
-          <p class="text-gray-700">Set budgets and get alerts when you're close to your limits</p>
+          <h3 class="text-xl font-semibold mb-4">Budget Tracking</h3>
+          <p>Set budgets and get alerts when you're close to your limits</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- How It Works -->
-  <section class="py-16">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold mb-4">How Chrima Works</h2>
-      <p class="text-xl text-gray-700">Three simple steps to financial clarity</p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="relative">
-        <div class="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
-          <span class="text-purple-600 font-bold text-xl">1</span>
-        </div>
-        <h3 class="text-xl font-semibold mb-2 text-center">Add Your Subscriptions</h3>
-        <p class="text-gray-700 text-center">Simply input your recurring expenses and subscriptions into the app</p>
+  <section class="w-full py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-6">How Chrima Works</h2>
+        <p class="text-xl mb-10">Three simple steps to financial clarity</p>
       </div>
-      <div class="relative">
-        <div class="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
-          <span class="text-purple-600 font-bold text-xl">2</span>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="relative">
+          <div
+            class="bg-[#2A2A2A] rounded-full w-12 h-12 flex items-center justify-center mb-6 mx-auto"
+          >
+            <span class="text-[#84CC16] font-bold text-xl">1</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-center">
+            Add Your Subscriptions
+          </h3>
+          <p class="text-center">
+            Simply input your recurring expenses and subscriptions into the app
+          </p>
         </div>
-        <h3 class="text-xl font-semibold mb-2 text-center">Set Your Preferences</h3>
-        <p class="text-gray-700 text-center">Customize notifications and set budget limits that work for you</p>
-      </div>
-      <div class="relative">
-        <div class="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
-          <span class="text-purple-600 font-bold text-xl">3</span>
+        <div class="relative">
+          <div
+            class="bg-[#2A2A2A] rounded-full w-12 h-12 flex items-center justify-center mb-6 mx-auto"
+          >
+            <span class="text-[#84CC16] font-bold text-xl">2</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-center">
+            Set Your Preferences
+          </h3>
+          <p class="text-center">
+            Customize notifications and set budget limits that work for you
+          </p>
         </div>
-        <h3 class="text-xl font-semibold mb-2 text-center">Stay on Track</h3>
-        <p class="text-gray-700 text-center">Get insights and reminders to help you manage your expenses effortlessly</p>
+        <div class="relative">
+          <div
+            class="bg-[#2A2A2A] rounded-full w-12 h-12 flex items-center justify-center mb-6 mx-auto"
+          >
+            <span class="text-[#84CC16] font-bold text-xl">3</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-center">Stay on Track</h3>
+          <p class="text-center">
+            Get insights and reminders to help you manage your expenses
+            effortlessly
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Stats Section -->
-  <section class="py-16 bg-gray-50 -mx-4 px-4">
-    <div class="max-w-4xl mx-auto">
-      <div class="grid md:grid-cols-3 gap-8 text-center">
+  <section class="w-full py-20 bg-[#2A2A2A]">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12 text-center">
         <div>
-          <div class="text-4xl font-bold text-purple-600 mb-2">30%</div>
-          <p class="text-gray-700">Average monthly savings</p>
+          <div class="text-4xl font-bold text-[#84CC16] mb-4">30%</div>
+          <p>Average monthly savings</p>
         </div>
         <div>
-          <div class="text-4xl font-bold text-purple-600 mb-2">50K+</div>
-          <p class="text-gray-700">Active users</p>
+          <div class="text-4xl font-bold text-[#84CC16] mb-4">50K+</div>
+          <p>Active users</p>
         </div>
         <div>
-          <div class="text-4xl font-bold text-purple-600 mb-2">4.8★</div>
-          <p class="text-gray-700">App Store rating</p>
+          <div class="text-4xl font-bold text-[#84CC16] mb-4">4.8★</div>
+          <p>App Store rating</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="py-16 text-center">
-    <h2 class="text-3xl font-bold mb-6">Ready to Take Control of Your Finances?</h2>
-    <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-      Join thousands of users who are saving money and staying organized with Chrima.
-    </p>
-    <AppStoreButtons />
+  <section class="w-full py-20 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-8">
+        Ready to Take Control of Your Finances?
+      </h2>
+      <p class="text-xl mb-10 max-w-2xl mx-auto">
+        Join thousands of users who are saving money and staying organized with
+        Chrima.
+      </p>
+      <AppStoreButtons />
+    </div>
   </section>
 </BaseLayout>
