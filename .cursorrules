@@ -1,0 +1,28 @@
+# .cursorrules
+
+# Project Summary
+This project is a static landing page built using Astro and Tailwind CSS. It is for a mobile app called "Chrima" which helps users track and manage their expenses and subscriptions.
+
+# Goals
+- Create a clean, modern, simple, mobile-responsive landing page.
+- Prioritize SEO, fast loading, and good Lighthouse scores.
+- Include key sections: Hero, Features, Screenshots, App Store links, Privacy Policy, and Terms of Service.
+- No interactivity or client-side JavaScript unless absolutely necessary.
+- Focus on semantic HTML and accessible design.
+- Minimal use of external libraries or heavy components.
+
+# Styling Rules
+- Use Tailwind CSS utility classes only (avoid writing custom CSS unless needed).
+- Ensure all sections are responsive from mobile (sm) to desktop (lg/xl).
+- Use `max-w-4xl mx-auto px-4` for consistent layout width and padding.
+- Use `text-gray-700` or `text-gray-900` for readable body text.
+
+# Layout Guidelines
+- Use a base layout (`BaseLayout.astro`) to include shared head tags, header, and footer.
+- Metadata (title, description, og:image, etc.) should be passed via Astro.props and used in the layout head.
+- Pages: `/`, `/privacy-policy`, `/terms-of-service`
+
+# Development Notes
+- No React is used in this project (Astro only).
+- Tailwind IntelliSense should be enabled.
+- Deployment target is Vercel with static output.
