@@ -24,6 +24,13 @@ const {
     <meta name="description" content={description} />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="subscription tracker, expense manager, recurring payment tracker, subscription management, personal finance app, bill reminder, budget planner, subscription organizer, monthly expense tracker" />
+
+    <!-- Additional Meta Tags -->
+    <meta name="application-name" content="Chrima" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Chrima - Subscription Manager" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -48,17 +55,47 @@ const {
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={"/images/og-preview.png"} />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
+    <meta property="og:app:name" content="Chrima" />
+    <meta property="og:app:id:iphone" content="YOUR_APP_STORE_ID" />
+    <meta property="og:app:id:android" content="YOUR_PLAY_STORE_ID" />
+    <meta property="og:app:url:iphone" content="https://apps.apple.com/app/YOUR_APP_STORE_ID" />
+    <meta property="og:app:url:android" content="https://play.google.com/store/apps/details?id=YOUR_PLAY_STORE_ID" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ChrimaApp" />
+    <meta name="twitter:creator" content="@ChrimaApp" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={"/images/og-preview.png"} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:app:name:iphone" content="Chrima" />
+    <meta name="twitter:app:id:iphone" content="YOUR_APP_STORE_ID" />
+    <meta name="twitter:app:url:iphone" content="https://apps.apple.com/app/YOUR_APP_STORE_ID" />
+    <meta name="twitter:app:name:googleplay" content="Chrima" />
+    <meta name="twitter:app:id:googleplay" content="YOUR_PLAY_STORE_ID" />
+    <meta name="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=YOUR_PLAY_STORE_ID" />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="author" content="Chrima" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="rating" content="safe for kids" />
+    <meta name="copyright" content="Chrima" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="target" content="all" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="application-name" content="Chrima - Subscription Manager" />
+    <meta name="category" content="Finance" />
+
+    <!-- Alternative Languages -->
+    <link rel="alternate" href="https://chrima.app" hreflang="x-default" />
+    <link rel="alternate" href="https://chrima.app" hreflang="en" />
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
@@ -72,21 +109,45 @@ const {
             "url": "https://chrima.app",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://chrima.app/images/logo.svg"
-            }
+              "url": "https://chrima.app/images/logo.svg",
+              "width": "512",
+              "height": "512"
+            },
+            "description": "Chrima helps you track subscriptions, manage recurring payments, and take control of your personal finances with smart insights and reminders.",
+            "sameAs": [
+              "https://apps.apple.com/app/YOUR_APP_STORE_ID",
+              "https://play.google.com/store/apps/details?id=YOUR_PLAY_STORE_ID"
+            ]
           },
           {
             "@type": "WebSite",
             "@id": "https://chrima.app/#website",
             "url": "https://chrima.app",
-            "name": "Chrima",
+            "name": "Chrima - Smart Subscription & Expense Tracker",
+            "description": "Track all your subscriptions, recurring payments, and expenses in one place. Get smart reminders and insights to save money on your monthly bills.",
             "publisher": {
               "@id": "https://chrima.app/#organization"
-            }
+            },
+            "keywords": [
+              "subscription tracker",
+              "expense manager",
+              "recurring payment tracker",
+              "subscription management app",
+              "personal finance app",
+              "bill reminder",
+              "subscription reminder",
+              "budget planner",
+              "subscription organizer",
+              "monthly expense tracker",
+              "subscription analytics",
+              "subscription cancellation helper",
+              "money management app",
+              "financial planning tool"
+            ]
           },
           {
             "@type": "MobileApplication",
-            "name": "Chrima",
+            "name": "Chrima - Subscription & Expense Manager",
             "operatingSystem": "iOS, Android",
             "applicationCategory": "FinanceApplication",
             "offers": {
@@ -99,7 +160,26 @@ const {
               "ratingValue": "4.8",
               "ratingCount": "50000"
             },
-            "description": "Track subscriptions, manage expenses, and save money with smart insights."
+            "description": "Take control of your finances with Chrima. Track all your subscriptions and recurring expenses, get smart reminders before payments, analyze spending patterns, and discover opportunities to save money. Features include subscription tracking, bill reminders, expense analytics, and budget planning tools.",
+            "featureList": [
+              "Subscription tracking and management",
+              "Smart payment reminders",
+              "Expense analytics and insights",
+              "Budget planning tools",
+              "Subscription renewal alerts",
+              "Money-saving recommendations",
+              "Spending pattern analysis",
+              "Bill payment tracking",
+              "Subscription cancellation assistance"
+            ],
+            "screenshot": {
+              "@type": "ImageObject",
+              "url": "https://chrima.app/images/home-page.png"
+            },
+            "downloadUrl": {
+              "ios": "https://apps.apple.com/app/YOUR_APP_STORE_ID",
+              "android": "https://play.google.com/store/apps/details?id=YOUR_PLAY_STORE_ID"
+            }
           }
         ]
       }

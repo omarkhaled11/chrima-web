@@ -1,4 +1,29 @@
 User-agent: *
 Allow: /
+Allow: /privacy-policy
+Allow: /terms-of-service
+Disallow: /in-app/
 
+# Sitemaps
 Sitemap: https://chrima.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Additional rules for specific bots
+User-agent: Googlebot
+Allow: /
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.svg
+
+User-agent: Googlebot-Image
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.svg
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10

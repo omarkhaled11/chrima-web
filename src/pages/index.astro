@@ -8,7 +8,7 @@ import AppStoreButtons from "../components/AppStoreButtons.astro";
   description="Take control of your finances with Chrima. Track subscriptions, manage expenses, and get smart reminders all in one beautiful app."
 >
   <!-- Hero Section -->
-  <section class="w-full py-20 md:py-32">
+  <section class="w-full py-20 md:py-32" aria-label="Hero">
     <div class="container mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="text-left">
@@ -23,28 +23,29 @@ import AppStoreButtons from "../components/AppStoreButtons.astro";
             <AppStoreButtons />
           </div>
         </div>
-        <div class="relative flex justify-center items-center">
+        <figure class="relative flex justify-center items-center">
           <img
             src="/images/home-page.png"
-            alt="Chrima App Interface"
+            alt="Chrima App Interface showing subscription dashboard"
             class="rounded-xl w-[240px] md:w-[320px] lg:w-[400px] h-auto"
             width="600"
             height="450"
           />
-        </div>
+          <figcaption class="sr-only">Main dashboard interface of Chrima app displaying subscription tracking features</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section class="w-full py-24 bg-[#2A2A2A]">
+  <section class="w-full py-24 bg-[#2A2A2A]" aria-label="Features">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-16">
         Everything You Need to Stay on Top of Your Expenses
       </h2>
       <div class="grid md:grid-cols-3 gap-12">
-        <div class="text-center p-8">
-          <div class="text-[#84CC16] mb-6">
+        <article class="text-center p-8">
+          <div class="text-[#84CC16] mb-6" aria-hidden="true">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-12 w-12 mx-auto"
@@ -61,9 +62,9 @@ import AppStoreButtons from "../components/AppStoreButtons.astro";
           </div>
           <h3 class="text-xl font-semibold mb-4">Smart Reminders</h3>
           <p>Never miss a payment with customizable alerts and notifications</p>
-        </div>
-        <div class="text-center p-8">
-          <div class="text-[#84CC16] mb-6">
+        </article>
+        <article class="text-center p-8">
+          <div class="text-[#84CC16] mb-6" aria-hidden="true">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-12 w-12 mx-auto"
@@ -81,9 +82,9 @@ import AppStoreButtons from "../components/AppStoreButtons.astro";
           </div>
           <h3 class="text-xl font-semibold mb-4">Expense Analytics</h3>
           <p>Get detailed insights into your spending patterns and trends</p>
-        </div>
-        <div class="text-center p-8">
-          <div class="text-[#84CC16] mb-6">
+        </article>
+        <article class="text-center p-8">
+          <div class="text-[#84CC16] mb-6" aria-hidden="true">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-12 w-12 mx-auto"
@@ -101,22 +102,23 @@ import AppStoreButtons from "../components/AppStoreButtons.astro";
           </div>
           <h3 class="text-xl font-semibold mb-4">Budget Tracking</h3>
           <p>Set budgets and get alerts when you're close to your limits</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- How It Works -->
-  <section class="w-full py-24">
+  <section class="w-full py-24" aria-label="How It Works">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
         <h2 class="text-3xl font-bold mb-6">How Chrima Works</h2>
         <p class="text-xl mb-10">Three simple steps to financial clarity</p>
       </div>
       <div class="grid md:grid-cols-3 gap-12">
-        <div class="relative">
+        <article class="relative">
           <div
             class="bg-[#2A2A2A] rounded-full w-12 h-12 flex items-center justify-center mb-6 mx-auto"
+            aria-hidden="true"
           >
             <span class="text-[#84CC16] font-bold text-xl">1</span>
           </div>
@@ -126,10 +128,11 @@ import AppStoreButtons from "../components/AppStoreButtons.astro";
           <p class="text-center">
             Simply input your recurring expenses and subscriptions into the app
           </p>
-        </div>
-        <div class="relative">
+        </article>
+        <article class="relative">
           <div
             class="bg-[#2A2A2A] rounded-full w-12 h-12 flex items-center justify-center mb-6 mx-auto"
+            aria-hidden="true"
           >
             <span class="text-[#84CC16] font-bold text-xl">2</span>
           </div>
@@ -139,10 +142,11 @@ import AppStoreButtons from "../components/AppStoreButtons.astro";
           <p class="text-center">
             Customize notifications and set budget limits that work for you
           </p>
-        </div>
-        <div class="relative">
+        </article>
+        <article class="relative">
           <div
             class="bg-[#2A2A2A] rounded-full w-12 h-12 flex items-center justify-center mb-6 mx-auto"
+            aria-hidden="true"
           >
             <span class="text-[#84CC16] font-bold text-xl">3</span>
           </div>
@@ -151,62 +155,63 @@ import AppStoreButtons from "../components/AppStoreButtons.astro";
             Get insights and reminders to help you manage your expenses
             effortlessly
           </p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- Stats Section -->
-  <section class="w-full py-24 bg-[#2A2A2A]">
+  <section class="w-full py-24 bg-[#2A2A2A]" aria-label="Statistics">
     <div class="container mx-auto px-6">
-      <div class="grid md:grid-cols-3 gap-12 text-center">
-        <div>
+      <nav class="grid md:grid-cols-3 gap-12 text-center" aria-label="Key statistics">
+        <article>
           <div class="text-4xl font-bold text-[#84CC16] mb-4">30%</div>
           <p>Average monthly savings</p>
-        </div>
-        <div>
+        </article>
+        <article>
           <div class="text-4xl font-bold text-[#84CC16] mb-4">50K+</div>
           <p>Active users</p>
-        </div>
-        <div>
+        </article>
+        <article>
           <div class="text-4xl font-bold text-[#84CC16] mb-4">4.8★</div>
           <p>App Store rating</p>
-        </div>
-      </div>
+        </article>
+      </nav>
     </div>
   </section>
 
   <!-- Analytics Dashboard Section -->
-  <section class="w-full py-16">
+  <section class="w-full py-16" aria-label="Analytics Dashboard">
     <div class="container mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="relative flex justify-center items-center">
+        <figure class="relative flex justify-center items-center">
           <img
             src="/images/analytics-page.png"
-            alt="Chrima Analytics Dashboard Interface"
+            alt="Chrima Analytics Dashboard showing expense insights and charts"
             class="rounded-xl w-[240px] md:w-[320px] lg:w-[400px] h-auto"
             width="600"
             height="450"
             loading="lazy"
             decoding="async"
           />
-        </div>
+          <figcaption class="sr-only">Analytics dashboard showing expense tracking charts and insights</figcaption>
+        </figure>
         <div class="text-left">
           <h2 class="text-3xl font-bold mb-6">Powerful Analytics Dashboard</h2>
           <p class="text-xl mb-6 text-gray-300">
             Get detailed insights into your spending patterns with beautiful, easy-to-understand visualizations. Track trends, identify opportunities to save, and make smarter financial decisions.
           </p>
-          <ul class="space-y-4 text-lg text-gray-300">
+          <ul class="space-y-4 text-lg text-gray-300" role="list">
             <li class="flex items-center">
-              <span class="text-[#84CC16] mr-3">✓</span>
+              <span class="text-[#84CC16] mr-3" aria-hidden="true">✓</span>
               Detailed spending breakdowns
             </li> 
             <li class="flex items-center">
-              <span class="text-[#84CC16] mr-3">✓</span>
+              <span class="text-[#84CC16] mr-3" aria-hidden="true">✓</span>
               Monthly trend analysis
             </li>
             <li class="flex items-center">
-              <span class="text-[#84CC16] mr-3">✓</span>
+              <span class="text-[#84CC16] mr-3" aria-hidden="true">✓</span>
               Custom spending categories
             </li>
           </ul>
@@ -216,7 +221,7 @@ import AppStoreButtons from "../components/AppStoreButtons.astro";
   </section>
 
   <!-- CTA Section -->
-  <section class="w-full py-24 text-center">
+  <section class="w-full py-24 text-center" aria-label="Download">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold mb-8">
         Ready to Take Control of Your Finances?
