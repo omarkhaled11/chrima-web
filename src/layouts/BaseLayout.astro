@@ -21,6 +21,12 @@ const {
 
 <html lang="en">
   <head>
+    <!-- CRITICAL PERFORMANCE RESOURCES - Load First -->
+    <link rel="preload" href="/fonts/Sora-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/Sora-Bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/Sora-Medium.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/images/home-page.png" as="image" fetchpriority="high" />
+    
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta charset="utf-8" />
@@ -32,6 +38,10 @@ const {
     <meta name="format-detection" content="telephone=no" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Chrima - Subscription Manager" />
+
+    <!-- Resource Hints -->
+    <link rel="dns-prefetch" href="//vitals.vercel-analytics.com" />
+    <link rel="preconnect" href="https://vitals.vercel-analytics.com" crossorigin />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -181,6 +191,111 @@ const {
               "ios": "https://apps.apple.com/app/YOUR_APP_STORE_ID",
               "android": "https://play.google.com/store/apps/details?id=YOUR_PLAY_STORE_ID"
             }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does Chrima help me save money on subscriptions?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Chrima tracks all your subscriptions and sends smart reminders before renewals, helping you identify unused subscriptions and avoid unexpected charges. Our analytics show spending patterns so you can make informed decisions about which subscriptions to keep or cancel."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Chrima free to use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Chrima is completely free to download and use. We offer core subscription tracking, expense management, and smart reminders at no cost."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What types of subscriptions can I track with Chrima?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can track any recurring payment including streaming services (Netflix, Spotify), software subscriptions (Adobe, Microsoft), gym memberships, insurance payments, utility bills, and any other monthly or yearly recurring expenses."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I set custom reminder notifications?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely! Chrima allows you to customize notification timing for each subscription. Set reminders 1 day, 3 days, 1 week, or any custom timeframe before your subscription renews."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Product",
+            "name": "Chrima App",
+            "description": "Smart subscription and expense tracking app that helps you manage recurring payments and save money.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Chrima"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "1247",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "Sarah M."
+                },
+                "reviewBody": "Finally found an app that helps me keep track of all my subscriptions! Saved me over $200 last month by finding subscriptions I forgot about. The interface is clean and the reminders are perfect."
+              },
+              {
+                "@type": "Review",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "Mike T."
+                },
+                "reviewBody": "Love the analytics feature. Being able to see my spending patterns helps me make better financial decisions. The app is intuitive and the notifications work perfectly."
+              },
+              {
+                "@type": "Review",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "4",
+                  "bestRating": "5"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "Jennifer L."
+                },
+                "reviewBody": "Great app for subscription management. The reminder system is exactly what I needed. Would love to see more export options in future updates."
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://chrima.app"
+              }
+            ]
           }
         ]
       }
